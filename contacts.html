@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Contacts</title>
+</head>
+<style>
+body{
+    background-color: #2b3641;
+    font-family: "Roboto", sans-serif;        
+}
+#contacts {
+  text-align: center;
+  margin: 50px 0;
+}
+#contacts h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #9b59b6;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+#contacts-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px;
+}
+#contacts-content form {
+  width: 400px;
+  padding: 20px;
+  background-color: #38434d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+#contacts-content form label {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  color: #9b59b6;
+  margin-bottom: 5px;
+}
+#contacts-content form input,
+#contacts-content form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #bdc3c7;
+  margin-bottom: 20px;
+  margin-left:-10px;
+}
+#contacts-content form input[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ecf0f1;
+  background-color: #9b59b6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#contacts-content form input[type="submit"]:hover {
+  background-color: #9b59b6;
+}
+#contacts-content #contacts-info {
+  width: 400px;
+  padding: 20px;
+  background-color: #38434d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#contacts-content form:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+p{
+    color:#9b59b6;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight:bold;
+}
+#LINKSFAM{
+    text-decoration:none;
+    color:#9b59b6;
+    transition:0.3s;
+}
+#LINKSFAM:hover{
+    color:#cb85e7;
+}
+#homebutton{
+  display: block;
+  width: 200px;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #9b59b6;
+  text-decoration: none;
+  background-color: #2c3e50;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin:auto;
+}
+#homebutton:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+  </style>
+
+<body>
+    <div id="contacts">
+                <div id="other">
+                    <a href="./index.html" id="homebutton">Home</a>
+                </div>
+        <h2>Contacts</h2>
+        <div id="contacts-content">
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+            <div id="contacts-info">
+                <p>You can also contact me through the following links:</p>
+                <p>Email: ragingmonstersC@gmail.com</p>
+                <p>Twitter: <a id="LINKSFAM" href="https://twitter.com/mikeofato" target="_blank">@MikeoFato</a></p>
+                <p>Twitch: <a id="LINKSFAM" href="https://www.twitch.tv/mikeofato" target="_blank">@MikeoFato</a></p>
+            </div>
+        </div>
+    </div>
+    <script>  document.body.style.zoom = 1.4</script>
+</body>
+</html>
